@@ -1,10 +1,10 @@
 import {Unit} from "db://assets/scripts/logic/units/Unit";
 import {BlueFlowerLevel2} from "db://assets/scripts/logic/units/BlueFlowerLevel2";
 
-export class BlueFlowerLevel1 extends Unit {
-    prefabPath = 'prefabs/units/Blue Flower Level 1';
-
+export class BoxWithBonusLevel1 extends Unit {
+    prefabPath = 'prefabs/units/Box With Bonus Level 1';
     mergeClass(): { new(...args): Unit } | undefined {
-        return BlueFlowerLevel2;
+        alert('Поздравляю, Вы прошли игру!')
+        return undefined;
     }
 }
